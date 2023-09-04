@@ -3,8 +3,8 @@
     <h4>{{ title }}</h4>
   </li>
   <li
-    class="collection-item"
     *ngFor="let word of words"
+    class="collection-item"
     [ngClass]="{ incorrect: word?.correct === false }"
   >
     {{ word.word }}

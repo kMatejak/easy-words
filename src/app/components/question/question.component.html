@@ -5,26 +5,18 @@
         <h2>{{ word ? word.word : 'Koniec!' }}</h2>
       </div>
       <div class="card-action">
-        <button 
-          class="btn-large blue m5" 
-          (click)="addToNouns(word)" 
+        <button
+          class="btn-large blue m5"
+          (click)="addToNouns(word)"
           *ngIf="word"
         >
           Noun
         </button>
         <button 
-          class="btn-large blue"
-          (click)="addToVerbs(word)"
-          *ngIf="word"
-        >
+          class="btn-large blue" 
+          (click)="addToVerbs(word)" 
+          *ngIf="word">
           Verb
-        </button>
-        <button 
-          class="btn-large black"
-          (click)="check()"
-          *ngIf="!word"
-        >
-          Sprawdź
         </button>
       </div>
     </div>
